@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Toko Online QRIS</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+  body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background: #f5f7fa;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  .container {
+    background: #fff;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    max-width: 420px;
+    width: 90%;
+    padding: 30px;
+    text-align: center;
+  }
+  h1 {
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #222;
+  }
+  .product-desc {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 25px;
+  }
+  .price {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #2d8fdd;
+  }
+  .qris-container {
+    margin-bottom: 30px;
+  }
+  .qris-container img {
+    width: 260px;
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(45, 143, 221, 0.25);
+  }
+  .btn-pay {
+    background: #2d8fdd;
+    border: none;
+    color: white;
+    font-size: 1.1rem;
+    padding: 15px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  .btn-pay:hover {
+    background: #1a6fc0;
+  }
+  .info-text {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #666;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>100 Followers</h1>
+    <div class="product-desc">Suntik Followers Tiktok 100% Aman</div>
+    <div class="price">Rp6.500</div>
+    <div class="qris-container">
+      <img src="https://files.catbox.moe/gw33mj.jpg" alt="QRIS untuk pembayaran" />
+    </div>
+    <button class="btn-pay" id="btnPay">Saya sudah melakukan pembayaran</button>
+    <div class="info-text">Setelah melakukan pembayaran, Jangan lupa foto bukti tf kirim ke telegram kita klik tombol di atas untuk konfirmasi dan lanjutkan.</div>
+  </div>
+
+<script>
+  // Change this URL to the page you want to redirect after payment confirmation
+  const redirectUrl = "https://whatsapp.com/channel/0029VbAeIwNLNSZxkk1slw2N";
+
+  document.getElementById('btnPay').addEventListener('click', function() {
+    // Here you could expand with real payment verification APIs or logic.
+    alert("Terima kasih telah melakukan pembayaran!");
+    window.location.href = redirectUrl;
+  });
+</script>
+</body>
+</html>
+
